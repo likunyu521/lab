@@ -2,6 +2,7 @@
 
 if [ -n "$1" ]&&[ -n "$2" ]; then
    cd /Users/haroldrain/project/$1
+   echo `pwd`
    git add .
    git commit -m "$2"
    git pull
