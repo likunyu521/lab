@@ -1,7 +1,6 @@
 #!/bin/bash
 
 if [ -n "$1" ]&&[ -n "$2" ]; then
-   echo "$1$2"
    cd /Users/haroldrain/project/$1
    git add .
    git commit -m "$2"
