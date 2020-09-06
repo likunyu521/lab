@@ -1,12 +1,14 @@
 #!/bin/bash
 
-msg=$1
-if [ -n "$msg" ]; then
-   git add -A
-   git commit -m"${msg}"
+if [ -n "$1" ]&&[ -n "$2" ]; then
+   echo "$1$2"
+   cd /Users/haroldrain/project/$1
+   git add .
+   git commit -m "$2"
    git pull
    git status
-   echo "完成add、commit、pull，别忘了push"
+   git push origin master
+   echo "$1项目已更新到Github，更新内容：$2"
 else
-    echo "请添加注释再来一遍"
+    echo "填写项目名称和提交备注"
 fi
