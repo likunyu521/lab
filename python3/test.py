@@ -4,7 +4,7 @@ def foo(a):
 
 def bar(b):
     b = 101
-    print(b)
+    # print(b)
 
 
 a = []
