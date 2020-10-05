@@ -1,0 +1,2 @@
+class single():
+    __instance
